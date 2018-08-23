@@ -1,5 +1,4 @@
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.neural_network import MLPClassifier
 import fileinput
 
 training_data = list()
