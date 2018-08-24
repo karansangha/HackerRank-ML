@@ -45,7 +45,6 @@ for item in theList:
     j = 0
     for j in range(len(champions)):
         data.append(db[champions[j]])
-        j += 1
     dataChampions.append(data)
 
 # Import the classifier
@@ -58,7 +57,7 @@ my_classifier.fit(dataChampions, dataWinners)
 inp = int(input())
 inputList = []
 
-for k in range(inp):
+for _ in range(inp):
     line = input()
     inputList.append(line)
 
